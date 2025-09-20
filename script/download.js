@@ -2,7 +2,7 @@ const downloadRelease = require('download-github-release');
 const path = require('path');
 const fs = require('fs');
 
-let user = 'openblockcc';
+let user = 'leo266';
 let repo = 'external-resources-v3';
 
 process.argv.forEach(arg => {
