@@ -13,12 +13,12 @@
     "arduino-staging": "script/bin/arduino-staging.js"
   },
   "scripts": {
-    "fetch": "rimraf external-resources download && node script/download.js --repo=openblockcc/external-resources-v3",
+    "fetch": "rimraf external-resources download && node script/download.js --repo=leo266/external-resources-v3",
     "start": "node ./test/start-server.js",
     "start:clear": "rimraf ../.openblockData/external-resources && node ./test/start-server.js",
     "clean": "rimraf external-resources dist translation download ../.openblockData/external-resources",
-    "build:extension": "node script/generate-extension-page.js --url=https://openblockcc.github.io/external-resources/",
-    "build:device": "node script/generate-device-page.js --url=https://openblockcc.github.io/external-resources/",
+    "build:extension": "node script/generate-extension-page.js --url=https://leo266.github.io/external-resources/",
+    "build:device": "node script/generate-device-page.js --url=https://leo266.github.io/external-resources/",
     "build": "rimraf dist && npm run build:extension && npm run build:device",
     "deploy": "npm run fetch && npm run build",
     "lint": "eslint ./",
